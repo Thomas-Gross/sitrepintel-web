@@ -17,7 +17,7 @@
     --blue:   #1e90ff;
     --blue2:  #4ab8ff;
     --text:   #e8edf5;
-    --muted:  #4a6a8a;
+    --muted:  #7a9ab8;
     --border: #1a3050;
     --green:  #22c55e;
     --red:    #ef4444;
@@ -84,7 +84,7 @@
   }
   .hero-headline em { font-style: normal; color: var(--gold); }
   .hero-sub {
-    font-size: 17px; font-weight: 300; color: #6a8aaa; line-height: 1.65;
+    font-size: 18px; font-weight: 400; color: #9ab8d0; line-height: 1.65;
     max-width: 560px; margin: 0 auto 32px; letter-spacing: 0.3px;
   }
 
@@ -104,7 +104,7 @@
   }
   .stat-lbl {
     font-family: 'Share Tech Mono', monospace; font-size: 8px;
-    letter-spacing: 2.5px; color: var(--muted); display: block; margin-top: 5px;
+    letter-spacing: 2px; color: #8aaccc; font-size: 13px; display: block; margin-top: 6px;
   }
 
   .pricing-wrap { margin-bottom: 48px; animation: fadeUp 0.7s 0.3s ease both; }
@@ -133,7 +133,7 @@
   .pricing-name {
     font-family: 'Bebas Neue', sans-serif; font-size: 32px; letter-spacing: 3px; margin-bottom: 4px;
   }
-  .pricing-tagline { font-size: 14px; color: var(--muted); font-weight: 300; }
+  .pricing-tagline { font-size: 17px; color: #8aaccc; font-weight: 400; }
 
   .trial-callout {
     background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.3);
@@ -147,7 +147,7 @@
     font-family: 'Share Tech Mono', monospace; font-size: 9px;
     letter-spacing: 2px; color: var(--muted); display: block; margin-top: 4px;
   }
-  .price-line { font-family: 'Share Tech Mono', monospace; font-size: 11px; letter-spacing: 1px; color: var(--muted); }
+  .price-line { font-family: 'Share Tech Mono', monospace; font-size: 14px; letter-spacing: 1px; color: #8aaccc; }
   .price-line strong { color: var(--text); font-size: 16px; }
 
   .pricing-bottom { padding: 28px 40px 36px; }
@@ -166,8 +166,8 @@
   .feat-dot.re { background:var(--red);   box-shadow:0 0 5px var(--red);   }
   .feat-dot.te { background:#14b8a6;      box-shadow:0 0 5px #14b8a6;      }
   .feat-dot.pi { background:#ec4899;      box-shadow:0 0 5px #ec4899;      }
-  .feat-text strong { font-size: 14px; font-weight: 600; letter-spacing: 0.5px; display: block; }
-  .feat-text span   { font-size: 12px; color: var(--muted); font-weight: 300; }
+  .feat-text strong { font-size: 16px; font-weight: 600; letter-spacing: 0.5px; display: block; }
+  .feat-text span   { font-size: 15px; color: #8aaccc; font-weight: 400; }
 
   .cta-btn {
     display: block; width: 100%;
@@ -180,7 +180,7 @@
   .cta-btn:active { transform:translateY(0); box-shadow:none; }
   .cta-sub {
     font-family: 'Share Tech Mono', monospace; font-size: 9px;
-    letter-spacing: 2px; color: var(--muted); text-align: center; margin-top: 10px;
+    letter-spacing: 1.5px; color: #8aaccc; font-size: 13px; text-align: center; margin-top: 10px;
   }
 
   .preview-section { margin-bottom: 48px; animation: fadeUp 0.7s 0.35s ease both; }
@@ -194,31 +194,31 @@
   .preview-card {
     background: var(--navy2); border: 1px solid var(--border);
     padding: 20px; font-family: 'Share Tech Mono', monospace;
-    font-size: 11px; line-height: 1.9; position: relative; overflow: hidden;
+    font-size: 13px; line-height: 1.9; position: relative; overflow: hidden;
   }
   .preview-card::after {
     content:''; position:absolute; bottom:0; left:0; right:0;
     height:55px; background:linear-gradient(transparent, var(--navy2));
   }
-  .prev-lbl { font-size:8px; letter-spacing:4px; color:var(--gold); opacity:.6; margin-bottom:8px; }
+  .prev-lbl { font-size:11px; letter-spacing:3px; color:var(--gold); opacity:.6; margin-bottom:8px; }
   .prev-row { display:flex; gap:14px; }
-  .prev-tick { color:var(--blue2); font-weight:bold; width:58px; flex-shrink:0; }
-  .prev-px   { color:var(--text);  width:76px; flex-shrink:0; }
-  .prev-up   { color:var(--green); width:72px; flex-shrink:0; }
-  .prev-dn   { color:var(--red);   width:72px; flex-shrink:0; }
-  .prev-info { color:#3a5a7a; flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .prev-tick { color:var(--blue2); font-weight:bold; width:62px; flex-shrink:0; font-size:13px; }
+  .prev-px   { color:var(--text);  width:80px; flex-shrink:0; font-size:13px; }
+  .prev-up   { color:var(--green); width:76px; flex-shrink:0; font-size:13px; }
+  .prev-dn   { color:var(--red);   width:76px; flex-shrink:0; font-size:13px; }
+  .prev-info { color:#7a9ab8; font-size:13px; flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 
   .contracts-preview {
     background:var(--navy2); border:1px solid var(--border);
     padding:16px 20px; margin-top:8px;
-    font-family:'Share Tech Mono',monospace; font-size:10px;
+    font-family:'Share Tech Mono',monospace; font-size:12px;
   }
   .cp-row { display:flex; gap:12px; padding:5px 0; border-bottom:1px solid rgba(26,48,80,0.5); }
   .cp-row:last-child { border-bottom:none; }
-  .cp-tick { color:var(--blue2); width:50px; flex-shrink:0; font-weight:bold; }
-  .cp-date { color:var(--muted); width:90px; flex-shrink:0; }
-  .cp-amt  { color:var(--green); width:70px; flex-shrink:0; }
-  .cp-desc { color:#3a5a7a; flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .cp-tick { color:var(--blue2); width:54px; flex-shrink:0; font-weight:bold; font-size:12px; }
+  .cp-date { color:var(--muted); width:90px; flex-shrink:0; font-size:12px; }
+  .cp-amt  { color:var(--green); width:70px; flex-shrink:0; font-size:12px; }
+  .cp-desc { color:#7a9ab8; font-size:12px; flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 
   .how-section { margin-bottom: 48px; animation: fadeUp 0.7s 0.4s ease both; }
   .how-steps {
@@ -230,12 +230,12 @@
     font-family:'Bebas Neue',sans-serif; font-size:40px;
     color:var(--border); letter-spacing:2px; line-height:1; display:block; margin-bottom:8px;
   }
-  .step-title { font-family:'Barlow Condensed',sans-serif; font-size:16px; font-weight:700; letter-spacing:1px; margin-bottom:6px; color:var(--gold); }
-  .step-desc { font-size:13px; color:var(--muted); font-weight:300; line-height:1.5; }
+  .step-title { font-family:'Barlow Condensed',sans-serif; font-size:18px; font-weight:700; letter-spacing:1px; margin-bottom:6px; color:var(--gold); }
+  .step-desc { font-size:16px; color: #8aaccc; font-weight:400; line-height:1.7; }
 
   footer { border-top:1px solid var(--border); padding:24px 0 40px; text-align:center; animation:fadeIn 1s 0.5s ease both; }
   .footer-brand { font-family:'Bebas Neue',sans-serif; font-size:16px; letter-spacing:5px; color:var(--muted); margin-bottom:8px; }
-  .footer-links { font-family:'Share Tech Mono',monospace; font-size:9px; letter-spacing:2px; color:#1a3a5a; line-height:2; }
+  .footer-links { font-family:'Share Tech Mono',monospace; font-size:12px; letter-spacing:1.5px; color:#4a6a8a; line-height:2.2; }
   .footer-links a { color:var(--muted); text-decoration:none; }
   .footer-links a:hover { color:var(--gold); }
 
@@ -304,7 +304,7 @@
     <div class="stats">
       <div class="stat"><span class="stat-num">55</span><span class="stat-lbl">Tickers Tracked</span></div>
       <div class="stat"><span class="stat-num">7</span><span class="stat-lbl">Data Sources</span></div>
-      <div class="stat"><span class="stat-num">7AM</span><span class="stat-lbl">Daily Delivery</span></div>
+      <div class="stat"><span class="stat-num">8AM</span><span class="stat-lbl">Daily · ET</span></div>
       <div class="stat"><span class="stat-num">5×</span><span class="stat-lbl">Per Week</span></div>
     </div>
   </section>
@@ -392,7 +392,7 @@
     <a class="cta-btn" href="https://buy.stripe.com/cNi5kE9Fz0Ec4L37jrbQY00" target="_blank" rel="noopener" style="max-width:480px; margin:0 auto; display:block;">
       START YOUR FREE WEEK
     </a>
-    <p class="cta-sub" style="margin-top:12px;">No credit card surprises · cancel before 7 days and pay nothing</p>
+    <p class="cta-sub" style="margin-top:12px;">No credit card surprises &nbsp;·&nbsp; cancel before 7 days and pay nothing</p>
   </div>
 
   <!-- MANAGE SUBSCRIPTION -->
@@ -400,8 +400,8 @@
     <div class="section-hdr">Already a subscriber?</div>
     <div style="background:var(--navy2); border:1px solid var(--border); padding:24px 28px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
       <div>
-        <div style="font-family:'Barlow Condensed',sans-serif; font-size:16px; font-weight:600; letter-spacing:1px; margin-bottom:4px;">Manage Your Subscription</div>
-        <div style="font-size:13px; color:var(--muted); font-weight:300;">Update billing, change payment method, or cancel anytime.</div>
+        <div style="font-family:'Barlow Condensed',sans-serif; font-size:18px; font-weight:600; letter-spacing:1px; margin-bottom:6px;">Manage Your Subscription</div>
+        <div style="font-size:16px; color:#8aaccc; font-weight:400;">Update billing, change payment method, or cancel anytime.</div>
       </div>
       <a href="https://billing.stripe.com/p/login/cNi5kE9Fz0Ec4L37jrbQY00" target="_blank" rel="noopener"
         style="background:transparent; border:1px solid var(--border); color:var(--muted);
@@ -421,14 +421,7 @@
   <div class="container">
     <div class="footer-brand">SITREP INTEL</div>
     <div class="footer-links">
-      <a href="mailto:newsletter@sitrepintel.com">newsletter@sitrepintel.com</a>
+      <a href="/cdn-cgi/l/email-protection#84eae1f3f7e8e1f0f0e1f6c4f7edf0f6e1f4edeaf0e1e8aae7ebe9"><span class="__cf_email__" data-cfemail="c6a8a3b1b5aaa3b2b2a3b486b5afb2b4a3b6afa8b2a3aae8a5a9ab">[email&#160;protected]</span></a>
       &nbsp;·&nbsp; sitrepintel.com &nbsp;·&nbsp;
       <a href="https://billing.stripe.com/p/login/cNi5kE9Fz0Ec4L37jrbQY00" target="_blank" rel="noopener">Manage Subscription</a><br>
-      Data: Polygon &middot; Finnhub &middot; Quiver Quantitative<br>
-      Not financial advice &middot; &copy; 2026 SITREP Intel
-    </div>
-  </div>
-</footer>
-
-</body>
-</html>
+      Data: Polygon &middot;
