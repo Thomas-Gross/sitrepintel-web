@@ -337,10 +337,24 @@
           <div class="feat-item"><div class="feat-dot te"></div><div class="feat-text"><strong>Analyst Consensus</strong><span>Buy / hold / sell across all names</span></div></div>
           <div class="feat-item"><div class="feat-dot pi"></div><div class="feat-text"><strong>Sector ETF Pulse</strong><span>ITA, XAR, PPA, SHLD daily performance</span></div></div>
         </div>
-        <a class="cta-btn" href="https://buy.stripe.com/cNi5kE9Fz0Ec4L37jrbQY00" target="_blank" rel="noopener">
-          START YOUR FREE WEEK
-        </a>
-        <p class="cta-sub">7-day free trial · then $10/month · cancel anytime · no commitment</p>
+        <div style="background:rgba(201,168,76,0.08); border:1px solid rgba(201,168,76,0.3); padding:20px; text-align:center;">
+          <div style="font-family:'Bebas Neue',sans-serif; font-size:22px; letter-spacing:4px; color:var(--gold); margin-bottom:8px;">LAUNCHING SOON</div>
+          <div style="font-family:'Share Tech Mono',monospace; font-size:13px; color:#7a9ab8; letter-spacing:1px;">Subscriptions open shortly. Enter your email to be notified when we launch.</div>
+        </div>
+        <div style="display:flex; gap:12px; margin-top:16px; flex-wrap:wrap;">
+          <input type="email" id="notify-email" placeholder="YOUR EMAIL ADDRESS" style="flex:1; min-width:200px; background:var(--navy3); border:1px solid var(--border); color:var(--text); font-family:'Share Tech Mono',monospace; font-size:13px; padding:14px 18px; outline:none;"/>
+          <button onclick="notifySignup()" style="background:var(--gold); color:var(--navy); border:none; font-family:'Bebas Neue',sans-serif; font-size:18px; letter-spacing:3px; padding:14px 28px; cursor:pointer;">NOTIFY ME</button>
+        </div>
+        <div id="notify-success" style="display:none; font-family:'Share Tech Mono',monospace; font-size:12px; color:#22c55e; margin-top:10px; letter-spacing:1px;">✓ YOU'RE ON THE LIST — WE'LL BE IN TOUCH SOON</div>
+        <script>
+          function notifySignup() {
+            var email = document.getElementById('notify-email').value;
+            if (!email || !email.includes('@')) return;
+            document.getElementById('notify-success').style.display = 'block';
+            document.getElementById('notify-email').style.display = 'none';
+            document.querySelector('[onclick="notifySignup()"]').style.display = 'none';
+          }
+        </script>
       </div>
     </div>
   </div>
@@ -389,10 +403,10 @@
   </section>
 
   <div style="text-align:center; margin-bottom:56px; animation:fadeUp 0.7s 0.5s ease both;">
-    <a class="cta-btn" href="https://buy.stripe.com/cNi5kE9Fz0Ec4L37jrbQY00" target="_blank" rel="noopener" style="max-width:480px; margin:0 auto; display:block;">
-      START YOUR FREE WEEK
-    </a>
-    <p class="cta-sub" style="margin-top:12px;">No credit card surprises &nbsp;·&nbsp; cancel before 7 days and pay nothing</p>
+    <div style="max-width:480px; margin:0 auto; background:rgba(201,168,76,0.08); border:1px solid rgba(201,168,76,0.3); padding:18px;">
+      <div style="font-family:'Bebas Neue',sans-serif; font-size:20px; letter-spacing:4px; color:var(--gold);">LAUNCHING SOON</div>
+      <div style="font-family:'Share Tech Mono',monospace; font-size:12px; color:#7a9ab8; margin-top:6px;">Subscriptions opening shortly at $10/month</div>
+    </div>
   </div>
 
   <!-- MANAGE SUBSCRIPTION -->
