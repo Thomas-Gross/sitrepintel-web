@@ -323,7 +323,7 @@
             <span class="trial-big">FREE EARLY ACCESS</span>
             <span class="trial-sub">No credit card · no commitment</span>
           </div>
-          <div class="price-line">Future price: <strong>$10</strong> / month · early members get a discount</div>
+          <div class="price-line">Future price: <strong>$10</strong> / month</div>
         </div>
       </div>
       <div class="pricing-bottom">
@@ -342,7 +342,7 @@
             <div style="width:8px; height:8px; border-radius:50%; background:#22c55e; box-shadow:0 0 8px #22c55e;"></div>
             <div style="font-family:'Bebas Neue',sans-serif; font-size:20px; letter-spacing:4px; color:var(--gold);">FREE EARLY ACCESS — LIMITED TIME</div>
           </div>
-          <div style="font-family:'Share Tech Mono',monospace; font-size:12px; color:#7a9ab8; letter-spacing:1px;">Get the full paid digest completely free while we're in beta. No credit card. No commitment. When we go paid, early access members lock in a discounted rate.</div>
+          <div style="font-family:'Share Tech Mono',monospace; font-size:12px; color:#7a9ab8; letter-spacing:1px;">Get the full paid digest completely free while we're in beta. No credit card. No commitment.</div>
         </div>
         <div style="display:flex; gap:12px; flex-wrap:wrap;">
           <input type="email" id="signup-email" placeholder="YOUR EMAIL ADDRESS" style="flex:1; min-width:200px; background:var(--navy3); border:1px solid var(--border); color:var(--text); font-family:'Share Tech Mono',monospace; font-size:13px; padding:14px 18px; outline:none; transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--border)'"/>
@@ -407,27 +407,37 @@
         <button onclick="freeSignup2()" style="background:var(--gold); color:var(--navy); border:none; font-family:'Bebas Neue',sans-serif; font-size:18px; letter-spacing:3px; padding:14px 28px; cursor:pointer;" onmouseover="this.style.background='var(--gold2)'" onmouseout="this.style.background='var(--gold)'">GET FREE ACCESS</button>
       </div>
       <div id="signup-success-2" style="display:none; font-family:'Share Tech Mono',monospace; font-size:12px; color:#22c55e; margin-top:10px; letter-spacing:1px;">✓ YOU'RE IN — FIRST BRIEFING ARRIVES TOMORROW MORNING</div>
-      <p style="font-family:'Share Tech Mono',monospace; font-size:11px; color:#4a6a8a; letter-spacing:1px; margin-top:10px;">Free during beta · No credit card · Early members get discounted rate when we go paid</p>
+      <p style="font-family:'Share Tech Mono',monospace; font-size:11px; color:#4a6a8a; letter-spacing:1px; margin-top:10px;">Free during beta · No credit card required</p>
     </div>
   </div>
 
   <!-- MANAGE SUBSCRIPTION -->
   <div style="margin-bottom:56px; animation:fadeUp 0.7s 0.55s ease both;">
     <div class="section-hdr">Already a subscriber?</div>
-    <div style="background:var(--navy2); border:1px solid var(--border); padding:24px 28px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
-      <div>
-        <div style="font-family:'Barlow Condensed',sans-serif; font-size:18px; font-weight:600; letter-spacing:1px; margin-bottom:6px;">Manage Your Subscription</div>
-        <div style="font-size:16px; color:#8aaccc; font-weight:400;">Update billing, change payment method, or cancel anytime.</div>
+    <div style="background:var(--navy2); border:1px solid var(--border); padding:24px 28px;">
+      <div style="margin-bottom:16px;">
+        <div style="font-family:'Barlow Condensed',sans-serif; font-size:18px; font-weight:600; letter-spacing:1px; margin-bottom:6px;">Unsubscribe</div>
+        <div style="font-size:15px; color:#8aaccc; font-weight:400;">Enter your email below to be removed from the SITREP Intel mailing list.</div>
       </div>
-      <a href="https://billing.stripe.com/p/login/cNi5kE9Fz0Ec4L37jrbQY00" target="_blank" rel="noopener"
-        style="background:transparent; border:1px solid var(--border); color:var(--muted);
-               font-family:'Bebas Neue',sans-serif; font-size:15px; letter-spacing:3px;
-               padding:12px 24px; text-decoration:none; white-space:nowrap;
-               transition:border-color 0.2s, color 0.2s;"
-        onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'"
-        onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">
-        MANAGE SUBSCRIPTION →
-      </a>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <input type="email" id="unsub-email" placeholder="YOUR EMAIL ADDRESS"
+          style="flex:1; min-width:200px; background:var(--navy3); border:1px solid var(--border);
+                 color:var(--text); font-family:'Share Tech Mono',monospace; font-size:13px;
+                 padding:12px 18px; outline:none; transition:border-color 0.2s;"
+          onfocus="this.style.borderColor='var(--blue)'"
+          onblur="this.style.borderColor='var(--border)'"/>
+        <button onclick="unsubscribe()"
+          style="background:transparent; border:1px solid var(--border); color:var(--muted);
+                 font-family:'Bebas Neue',sans-serif; font-size:15px; letter-spacing:3px;
+                 padding:12px 24px; cursor:pointer; white-space:nowrap; transition:border-color 0.2s, color 0.2s;"
+          onmouseover="this.style.borderColor='var(--red)';this.style.color='var(--red)'"
+          onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">
+          UNSUBSCRIBE →
+        </button>
+      </div>
+      <div id="unsub-success" style="display:none; font-family:'Share Tech Mono',monospace; font-size:12px; color:#22c55e; margin-top:10px; letter-spacing:1px;">✓ YOU HAVE BEEN UNSUBSCRIBED</div>
+      <div id="unsub-error" style="display:none; font-family:'Share Tech Mono',monospace; font-size:11px; color:#ef4444; margin-top:8px; letter-spacing:1px;">⚠ PLEASE ENTER A VALID EMAIL ADDRESS</div>
+      <div id="unsub-notfound" style="display:none; font-family:'Share Tech Mono',monospace; font-size:11px; color:#f59e0b; margin-top:8px; letter-spacing:1px;">⚠ EMAIL NOT FOUND — ARE YOU SUBSCRIBED?</div>
     </div>
   </div>
 
@@ -442,8 +452,7 @@
         var u='newsletter',d='sitrepintel.com';
         document.getElementById('footer-email').innerHTML='<a href="mailto:'+u+'@'+d+'" style="color:var(--muted);text-decoration:none;">'+u+'@'+d+'</a>';
       </script>
-      &nbsp;&middot;&nbsp; sitrepintel.com &nbsp;&middot;&nbsp;
-      <a href="https://billing.stripe.com/p/login/cNi5kE9Fz0Ec4L37jrbQY00" target="_blank" rel="noopener">Manage Subscription</a>
+      &nbsp;&middot;&nbsp; sitrepintel.com
     </div>
     <div style="margin-top:16px; font-family:'Share Tech Mono',monospace; font-size:11px; color:#2a4a6a; letter-spacing:1px; line-height:2;">
       DATA SOURCES &nbsp;&middot;&nbsp;
@@ -503,6 +512,30 @@ function freeSignup2() {
     },
     null
   );
+}
+
+function unsubscribe() {
+  var email = document.getElementById('unsub-email').value.trim();
+  document.getElementById('unsub-success').style.display = 'none';
+  document.getElementById('unsub-error').style.display = 'none';
+  document.getElementById('unsub-notfound').style.display = 'none';
+  if (!isValidEmail(email)) {
+    document.getElementById('unsub-error').style.display = 'block';
+    return;
+  }
+  fetch(APPS_SCRIPT_URL + '?action=unsubscribe&email=' + encodeURIComponent(email))
+    .then(function(r) { return r.json(); })
+    .then(function(d) {
+      if (d.status === 'ok') {
+        document.getElementById('unsub-success').style.display = 'block';
+        document.getElementById('unsub-email').value = '';
+      } else if (d.status === 'notfound') {
+        document.getElementById('unsub-notfound').style.display = 'block';
+      } else {
+        document.getElementById('unsub-success').style.display = 'block';
+      }
+    })
+    .catch(function() { document.getElementById('unsub-success').style.display = 'block'; });
 }
 </script>
 </body>
